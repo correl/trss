@@ -116,6 +116,17 @@ def usage():
 
     {0} download
         Fetch all feeds and download new items
+
+    {0} set [<setting> [<value>]]
+        Set or view configuration settings
+        Call without any arguments to list all settings and their values
+        Call with a setting and no value to see the current value for that setting
+
+        Currently, the only used setting is 'download_dir', which allows you to set
+        a directory to store all retrieved torrents, such as a directory your
+        torrent application watches for new downloads. If 'download_dir' is not set,
+        the current directory will be used.
+
     """.format(sys.argv[0])
 
 feeds = []
